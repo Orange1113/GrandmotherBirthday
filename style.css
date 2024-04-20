@@ -1,3 +1,8 @@
+@font-face {
+    font-family: '得意黑';
+    src: url('SmileySans-Oblique.ttf') format('truetype');
+}
+
 html, body {
     height:100%
 }
@@ -23,7 +28,7 @@ main {
     backdrop-filter: blur(10px);
     font-size: 65px;
     font-weight: 900;
-    font-family: '得意黑','思源黑体', sans-serif;
+    font-family: '得意黑';
     text-align: center;
     line-height: 120px;
     color: #ff8500;
@@ -38,4 +43,3 @@ button {
     border-radius: 999px;
     border: none;
 }
-
