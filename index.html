@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生日快乐</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="birthday.css">
+    <link rel="stylesheet" href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/1.0.0/typewriter.min.js"></script>
+</head>
+
+<body>
+    <main>
+        <div id="asklz">
+            <noscript>无法使用JavaScript</noscript>
+        </div>
+    </main>
+    <audio id="myAudio" src="music.mp3" loop></audio>
+    <button id="myBtn" onclick="toggleAudio()">
+        <i class="fa fa-play"  id="icon" style="font-size:20px;"></i>
+    </button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var app = document.getElementById('asklz');
+            var typewriter = new Typewriter(app, {
+                loop: true
+            });
+            typewriter.typeString('祝外婆生日快乐')
+                .pauseFor(2500)
+                .deleteChars(4)
+                .typeString('身体健康')
+                .pauseFor(2500)
+                .deleteChars(4)
+                .typeString('万事如意')
+                .pauseFor(2500)
+                .deleteChars(4)
+                .typeString('天天开心')
+                .pauseFor(2500)
+                .deleteAll()
+                .typeString('——爱你的吴景澄、吴景阅')
+                .pauseFor(2500)
+                .start();
+        });  
+    </script>
+
+    <script>
+        function toggleAudio() {  
+            var audioElement = document.getElementById("myAudio"); // 确保这里获取的是正确的音频元素  
+            var audioBtn = document.getElementById("myBtn");  
+            var iconElement = audioBtn.querySelector("i"); // 使用 querySelector 获取 <i> 元素  
+        
+            if (audioElement.paused) {  
+                audioElement.play();  
+                iconElement.classList.remove("fa-play");  
+                iconElement.classList.add("fa-pause");  
+            } else {  
+                audioElement.pause();  
+                iconElement.classList.remove("fa-pause");  
+                iconElement.classList.add("fa-play");  
+            }  
+        }
+    </script>
+</body>
+
+</html>

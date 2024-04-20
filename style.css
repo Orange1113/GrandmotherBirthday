@@ -1,0 +1,41 @@
+html, body {
+    height:100%
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url(background.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+main {
+    width: 700px;
+    height: 120px;
+    /* background: green; */
+    background: rgba(255, 255, 255, .2);
+    position: absolute;
+    left:0;top: 0;bottom: 0;right: 0;
+    margin: auto;
+    border-radius: 10px;
+    border: #555 2px solid;
+    backdrop-filter: blur(10px);
+    font-size: 65px;
+    font-weight: 900;
+    font-family: '得意黑','思源黑体', sans-serif;
+    text-align: center;
+    line-height: 120px;
+    color: #ff8500;
+}
+
+button {
+    margin: 10px;
+    color: white;
+    background-color: #66b9ff;
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    border: none;
+}
+
